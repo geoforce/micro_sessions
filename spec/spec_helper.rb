@@ -5,5 +5,5 @@ require "action_pack"
 require "micro_sessions"
 
 RSpec.configure do |c|
-  
+
 end
