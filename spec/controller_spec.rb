@@ -9,14 +9,6 @@ describe MicroSessions::Controller do
       end
     end
 
-    it "should default param to _msid" do
-      @controller_class.micro_session_options[:param].should == "_msid"
-    end
-
-    it "should default key to _micro_sessions" do
-      @controller_class.micro_session_options[:key].should == "_micro_sessions"
-    end
-
     it "should default length to 10" do
       @controller_class.micro_session_options[:length].should == 10
     end

@@ -11,8 +11,8 @@ Gem::Specification.new do |s|
   s.summary     = "Keyed sessions within the global sessions object."
   s.description = "Provides 'micro-sessions' within the global sessions object keyed off an identifier."
 
-  s.files        = Dir["{lib,spec}/**/*", "[A-Z]*", "init.rb"]
-  s.require_path = "lib"
+  s.files         = Dir["{lib,vendor,spec}/**/*", "[A-Z]*"]
+  s.require_paths = ["lib"]
 
   s.rubyforge_project = s.name
   s.required_rubygems_version = ">= 1.3.4"
