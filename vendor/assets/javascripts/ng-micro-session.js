@@ -1,6 +1,4 @@
-var MicroSession = angular.module('ng-micro-session', []);
-
-MicroSession.config(function($httpProvider) {
+angular.module('ng-micro-session', []).config(['$httpProvider', function($httpProvider) {
   var getToken = function() {
     var el = document.querySelector('meta[name="msid-token"]');
 
@@ -23,6 +21,4 @@ MicroSession.config(function($httpProvider) {
   if (window['Turbolinks']) {
     document.addEventListener('page:change', updateToken);
   }
-});
-
-MicroSession.$inject = ['$httpProvider'];
+}]);
